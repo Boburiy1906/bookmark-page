@@ -48,6 +48,7 @@ html {
 }
 
 a {
+  display: block;
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
@@ -72,7 +73,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Rubik", "Poppins" sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
@@ -102,20 +103,22 @@ body {
 .button {
   border-radius: 5px;
   font-weight: 500;
+  display: inline-block;
+  border: 2px solid transparent;
 }
 
 .button:active {
   opacity: 0.6;
 }
 
-.button-shadow {
+.button--shadow {
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
 }
 
 /* SITE-HEADER */
 
 .site-header {
-  padding: 48px 0 120px;
+  padding: 48px 0 183px;
 
 }
 
@@ -124,6 +127,11 @@ body {
   align-items: center;
 }
 
+/* LOGO */
+
+.logo {
+  margin-right: auto;
+  }
 
 .logo:hover {
   opacity: 0.8;
@@ -133,13 +141,11 @@ body {
   opacity: 0.6;
 }
 
-.logo__link {
-  display: flex;
-  align-items: center;
-}
-
 .logo__icon {
   display: block;
+  object-fit: contain;
+  width: 149px;
+  height: 25px;
 }
 
 .logo__title {
@@ -149,7 +155,7 @@ body {
 }
 
 .sitenav {
-  margin-left: auto;
+  margin-right: 48px;
 }
 
 .sitenav__item:not(:last-child) {
@@ -166,7 +172,7 @@ body {
 }
 
 .sitenav__link:hover {
-  color: var(--blue-color);
+  color: var(--orange-color);
 }
 
 .sitenav__link:active {
@@ -174,20 +180,20 @@ body {
 }
 
 
-.button-orange {
-  padding: 12px 32px 12px 34px;
-  margin-left: 48px;
+.button--orange {
+  padding: 10px 30px 9px 32px;
   font-size: 13px;
   line-height: 17px;
   text-align: right;
   letter-spacing: 1.5px;
   color: var(--button-text-color);
-  background: #fa5959;
-}
+  background: var(--orange-color);
+ }
 
-.button-orange:hover {
-  color: var(--blue-color);
-  background-color: #f07272;
+.button--orange:hover {
+  border-color: var(--orange-color);
+  color: var(--orange-color);
+  background-color: #fff;
 }
 
 
@@ -219,7 +225,7 @@ body {
 
 .site-hero__text {
   margin-top: 0;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -229,7 +235,7 @@ body {
 .site-hero__buttons {}
 
 .hero-button {
-  padding: 16px 25px;
+  padding: 8px 22px;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 0.25px;
@@ -239,23 +245,23 @@ body {
   color: var(--button-text-color);
   background-color: var(--blue-color);
   margin-right: 16px;
-}
+  }
 
 .button-blue:hover {
-  color: var(--title-color);
-  background-color: #f7f7f7;
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+  background-color: #fff;
 }
 
 .button-gray {
   opacity: 0.75;
   color: var(--title-color);
   background-color: #f7f7f7;
-}
+  }
 
 .button-gray:hover {
-  opacity: 1;
-  color: var(--button-text-color);
-  background-color: var(--blue-color);
+  border-color: var(--title-color);
+  background-color: var(--button-text-color);
 }
 
 .site-hero__img {
@@ -263,6 +269,7 @@ body {
   right: 73px;
   display: block;
 }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
