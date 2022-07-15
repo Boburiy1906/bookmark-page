@@ -5,26 +5,63 @@
   --cta-button-link-color: #5267df;
 }
 
+/* FONT-STYLES */
+
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
-  font-weight: 400;
-  src: local(''),
-    url('../fonts/rubik-v14-latin-regular.woff2') format('woff2'),
-    url('../fonts/rubik-v14-latin-regular.woff') format('woff');
   font-display: swap;
 }
 
-/* rubik-500 - latin */
 @font-face {
-  font-family: 'Rubik';
-  font-style: normal;
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
+    url("../fonts/Rubik-Medium.woff") format("woff");
   font-weight: 500;
-  src: local(''),
-    url('../fonts/rubik-v14-latin-500.woff2') format('woff2'),
-    url('../fonts/rubik-v14-latin-500.woff') format('woff');
+  font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
+    url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Rubik-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 *,
 *::after,
@@ -62,10 +99,10 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Poppins" sans-serif;
   font-weight: 400;
-  font-style: 18px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 36px;
 }
 
 /* VISUALLY-HIDDEN */
@@ -186,7 +223,7 @@ body {
 .site-hero {
   background: url(../img/right-bg.png) no-repeat center;
   background-position: right center;
-  }
+}
 
 .site-hero__container {
   display: flex;
