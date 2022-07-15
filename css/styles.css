@@ -73,6 +73,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /*kichik ekranda scrol eniga paydo bolmaydi*/
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -115,10 +116,14 @@ body {
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
 }
 
+.main-content{
+  flex-grow: 1;
+}
+
 /* SITE-HEADER */
 
 .site-header {
-  padding: 48px 0 183px;
+  padding: 48px 0 48px;
 
 }
 
@@ -200,17 +205,22 @@ body {
 /* SITE-HERO */
 
 .site-hero {
-  background: url(../img/right-bg.png) no-repeat center;
-  background-position: right center;
+  padding: 67px 0 105px;
+  background: url(../img/Rectangle.svg) no-repeat center;
+  background-position: calc(50% + 705px) 200px;
 }
 
 .site-hero__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .site-hero__info {
+  flex-shrink: 0;
+  width: 100%;
   max-width: 540px;
+  margin-top: 70px;
+  margin-right: 65px;
   color: var(--title-color);
 }
 
@@ -225,14 +235,16 @@ body {
 
 .site-hero__text {
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   opacity: 0.5;
 }
 
-.site-hero__buttons {}
+.site-hero__buttons {
+  display: flex;
+}
 
 .hero-button {
   padding: 8px 22px;
@@ -265,9 +277,12 @@ body {
 }
 
 .site-hero__img {
-  position: absolute;
-  right: 73px;
   display: block;
+  width: 578px;
+  height: 385px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
