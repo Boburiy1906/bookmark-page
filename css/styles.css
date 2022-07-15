@@ -1,20 +1,11 @@
 :root {
   --title-color: #242a45;
-  --button-background: #fa5959;
   --button-text-color: #fff;
-  --cta-button-link-color: #5267df;
+  --blue-color: #5267df;
+  --orange-color: #fa5959;
 }
 
 /* FONT-STYLES */
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
-    url("../fonts/Poppins-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: "Rubik";
@@ -34,14 +25,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
-    url("../fonts/Poppins-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: "Rubik";
@@ -52,17 +35,7 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
-    url("../fonts/Poppins-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-
+/* GLOBAL-STYLES */
 *,
 *::after,
 *::before {
@@ -193,7 +166,7 @@ body {
 }
 
 .sitenav__link:hover {
-  color: var(--cta-button-link-color);
+  color: var(--blue-color);
 }
 
 .sitenav__link:active {
@@ -213,7 +186,7 @@ body {
 }
 
 .button-orange:hover {
-  color: var(--cta-button-link-color);
+  color: var(--blue-color);
   background-color: #f07272;
 }
 
@@ -264,7 +237,7 @@ body {
 
 .button-blue {
   color: var(--button-text-color);
-  background-color: var(--cta-button-link-color);
+  background-color: var(--blue-color);
   margin-right: 16px;
 }
 
@@ -282,7 +255,7 @@ body {
 .button-gray:hover {
   opacity: 1;
   color: var(--button-text-color);
-  background-color: var(--cta-button-link-color);
+  background-color: var(--blue-color);
 }
 
 .site-hero__img {
