@@ -153,13 +153,44 @@ body {
   height: 25px;
 }
 
-.logo__title {
-  color: var(--title-color);
-  font-weight: 500;
-  font-size: 21px;
+/* SECTION' GENERAL STYLES */
+.section {}
+
+.section__container {}
+
+.section__info {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--text-color);
 }
 
+.section__title {
+  margin: 0 0 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+}
+
+.section__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.5;
+}
+
+
+/* SITENAV */
+
 .sitenav {
+  margin-left: auto;
+}
+
+.sitenav__item:not(:first-child) {
   margin-right: 48px;
 }
 
