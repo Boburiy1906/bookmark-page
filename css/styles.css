@@ -177,7 +177,6 @@ body {
 
 .section__description {
   margin: 0;
-  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   opacity: 0.5;
@@ -199,7 +198,6 @@ body {
 }
 
 .sitenav__link {
-  font-weight: 400;
   font-size: 13px;
   line-height: 17px;
   text-align: right;
@@ -267,7 +265,6 @@ body {
 .site-hero__description {
   margin-top: 0;
   margin-bottom: 32px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   opacity: 0.5;
@@ -321,14 +318,123 @@ body {
 /* FEATURES */
 .features {}
 
-.features__container {}
+.features__container {
+  padding-top: 75px;
+}
 
-.features__info {}
+.features__info {
+  margin-bottom: 45px;
+}
 
-.features__title {}
+/* FEATURE-TAB-PANEL */
 
-.features__description {}
+.feature-tab-panel {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 
+}
+
+.feature-tab-panel__img {
+  object-fit: contain;
+  flex-grow: 1;
+}
+
+.feature-tab-panel__info {
+  width: 100%;
+  max-width: 445px;
+  color: var(--text-color);
+}
+
+.feature-tab-panel__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+}
+
+.feature-tab-panel__description {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.5;
+}
+
+.feature-tab-panel__button {
+  margin: 0;
+  padding: 8px 22px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+/* PANEL-IMAGES */
+.simple-bookmarking-icon {
+  margin-right: 129px;
+}
+
+.speedy-searching-icon {
+  margin-right: 118px;
+}
+
+.easy-sharing-icon {
+  margin-right: 146px;
+}
+
+/* TAB-STYLES */
+.tab {}
+
+.tab__list {
+  width: 100%;
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab__item {
+  width: 243px;
+  border-bottom: 1px solid rgba(73, 93, 207, 0.2);
+}
+
+.tab__link {
+  padding: 27px 0 27px;
+  border-bottom: 4px solid transparent;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.54px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.tab__link:hover {
+  color: var(--orange-color);
+}
+
+.tab__item--active .tab__link {
+  opacity: 1;
+  color: var(--text-color);
+  border-color: var(--orange-color);
+}
+
+.tab__panels {
+  padding-top: 72px;
+  padding-bottom: 165px;
+  background: url(../img/Rectangle.svg) no-repeat;
+  background-position: calc(50% - 580px) 156px;
+}
+
+.tab__panel {
+  display: none;
+}
+
+.tab__panel--active {
+  display: block;
+}
 
 
 /* CTA */
@@ -381,7 +487,6 @@ body {
   border: 2px solid transparent;
   border-radius: 5px;
   background-color: #fff;
-  font-weight: 400;
   color: rgba(36, 42, 69, 0.25);
   letter-spacing: 0.25px;
   font-size: 14px;
